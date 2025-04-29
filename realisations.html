@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Réalisations BoisExemple">
-  <title>Réalisations - BoisExemple</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réalisations - BoisExemple</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
   <div class="container header-container">
-    <img src="images/logo.png" class="logo" alt="Logo">
+    <a href="index.html"><img src="images/logo.webp" class="logo" alt="Logo"></a>
     <button class="burger" aria-label="Menu">&#9776;</button>
     <nav>
       <ul>
         <li><a href="index.html">Accueil</a></li>
         <li><a href="a-propos.html">À propos</a></li>
-        <li><a href="services.html">Nos Services</a></li>
+        <li><a href="services.html">Services</a></li>
         <li><a href="realisations.html">Réalisations</a></li>
-        <li><a href="avis.html">Avis Clients</a></li>
+        <li><a href="avis.html">Avis</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
 <main class="container">
-<h2>Nos Réalisations</h2><p><img src='images/project.png' class='project-image'><img src='images/project.png' class='project-image'><img src='images/project.png' class='project-image'></p>
+
+<h2 class='section-title'>Nos Réalisations</h2>
+<div class='realisations-gallery'>
+  <a href='realisation1.html' class='real-card reveal'><picture><source srcset='images/project.webp' type='image/webp'><img src='images/project.png' alt='Réalisation 1'></picture><h4>Maison CLT – Nyon</h4></a>
+  <a href='realisation2.html' class='real-card reveal'><picture><source srcset='images/project.webp' type='image/webp'><img src='images/project.png' alt='Réalisation 2'></picture><h4>Charpente – Morges</h4></a>
+  <a href='realisation3.html' class='real-card reveal'><picture><source srcset='images/project.webp' type='image/webp'><img src='images/project.png' alt='Réalisation 3'></picture><h4>Rénovation chalet – Gruyères</h4></a>
+</div>
+
 </main>
 <footer>
   <p>&copy; 2025 BoisExemple - Tous droits réservés</p>

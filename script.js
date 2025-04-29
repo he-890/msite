@@ -1,20 +1,13 @@
 
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('nav ul');
+const burger=document.querySelector('.burger');
+const nav=document.querySelector('nav ul');
+burger.addEventListener('click',()=>nav.classList.toggle('active'));
 
-burger.addEventListener('click', () => {
-  nav.classList.toggle('active');
-});
-
-const revealOnScroll = () => {
-  document.querySelectorAll('section, .service-item, .project-image').forEach(el => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight - 50) {
-      el.style.opacity = 1;
-      el.style.transform = "translateY(0)";
-    }
+function reveal(){
+  document.querySelectorAll('.reveal').forEach(el=>{
+    const rect=el.getBoundingClientRect();
+    if(rect.top<window.innerHeight-60) el.classList.add('show');
   });
-};
-
-window.addEventListener('scroll', revealOnScroll);
-window.addEventListener('load', revealOnScroll);
+}
+window.addEventListener('scroll',reveal);
+window.addEventListener('load',reveal);
