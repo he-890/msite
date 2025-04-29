@@ -25,9 +25,25 @@
     </nav>
   </div>
 </header>
+
 <main class="container">
-<h2 class='section-title'>Contact</h2><p class='reveal'>Email : info@example.com</p><p class='reveal'>Tél : 012 345 6789</p>
+  <h2 class='section-title'>Contact</h2>
+  <div class="contact-wrapper">
+    <div class="contact-info reveal">
+      <p><strong>Adresse :</strong><br>123 rue du Bois<br>1000 Lausanne</p>
+      <p><strong>Téléphone :</strong><br><a href="tel:+41123456789">+41 12 345 67 89</a></p>
+      <p><strong>Email :</strong><br><a href="mailto:info@example.com">info@example.com</a></p>
+      <p><strong>Horaires :</strong><br>Lun–Ven : 08h00 – 17h30</p>
+    </div>
+    <form class="contact-form reveal" action="https://formspree.io/f/{your-id}" method="POST">
+      <input type="text" name="name" placeholder="Nom" required>
+      <input type="email" name="_replyto" placeholder="Email" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </div>
 </main>
+
 <footer>
   <p>&copy; 2025 BoisExemple - Tous droits réservés</p>
 </footer>
